@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="./media/style .css"/>
+    <title>HOME</title> 
+</head>
+
+
+<!--the insturaction of the element got by the help of this video (https://www.youtube.com/watch?v=N3FDyheHVMM)-->
+<body>  
+    <div class="grid-container">
+        <header>
+            <div class="content-div">
+                <a id="logo" href="index.html">SHOESY</a>
+            </div>
+
+            <div class="content-div">
+                <a class="center-header" href="index.html">HOME</a>
+            </div>
+
+            <div  class="content-div">
+                <button  class="favoritebtn head-btn center-header" id="fav-head-btn">FAVORITE LIST (
+                    <span> 0</span> )
+                </button>
+            </div>
+        
+            <div  class="content-div">
+                <button  class="center-header basketBtn  head-btn" id="baskt-head-btn">BASKET (
+                    <span> 0 </span> )
+                <img  id="basktimg" src="./media/baskt.jpg" alt="Go to basket"/>
+                </button>
+
+            </div>
+
+            <div  class="content-div">
+                <a class="center-header" href="contents/calculator.html">CALCULATOR</a>
+            </div>
+        
+            <div  class="content-div">
+                <a id="signin-head" href="./contents/sign-in.html">Sign-In</a>
+            </div>
+        </header>
+    </div>   
+        
+            <!--search bar-->
+    <div class="box">
+        <input type="checkbox" id="check" >
+        <div class="search-box">
+            <input type="text" placeholder= "SEARCH FOR YOUR PRODUCT..." id="searchbar"  onkeyup="searchFor()">
+                <label for="check" class="icon"  >
+                  <i class="fas fa-search"></i>
+                </label>
+        </div>
+    </div>
+
+        <br>
+           <br>
+    
+           
+<!-- contents start -->
+           
+<div>   
+    <ul class="products" id= "ul">
+
+        <li class="list" id="list1">
+            <div class="product" id="product">
+                <div>
+                    <img class="front-img" id="front-img1" src="./media/jordan1.jpg" title="Air Jordan 1 Mid"/>
+                </div>
+
+                <div class="product-name" id="product-name" >
+                    <a href="/#/product/1">
+                        <p>Air Jordan 1 Mid</p>
+                    </a>
+
+                </div>
+
+                <div id="cover-img"  class="product-brand">
+                    <p id="probrand" >NIKE</p>
+                </div>
+            
+                <div class="product-price" price="119.99" id="product-price">
+                        119.99 €
+                </div>
+
+                <div>
+                    <a class="addtofavorite" id="add-to-fav1" >Add to favorite</a>
+                    <a class="addtobasket"  id="add-to-bask1" >Add to basket</a>
+                </div>
+            </div>
+
+             <!-- hidden prudoct detels -->
+            <div class="hidden-pro-img hid  hiddenIMg" id="hidden-div1">
+                <span class="close">
+                 &times;
+                </span>
+                <img src="./media/jordan1-hide.jpg" id="mainImg1" class="hidden-pro-img-content">
+
+                <div class="product-detl"><p style="color: firebrick;">119,99 €</p>
+                    <p> Inspired by the original AJ1, the Air Jordan 1 Mid offers fans a chance to follow in MJ's footsteps.
+                        Fresh colour trims the clean, classic materials, imbuing modernity into a classic design.
+                    </p>
+                </div>
+        
+                <div class="title">
+                    Air Jordan 1 Mid
+                </div>
+
+                <div  class="extra-product-img">
+                    <div  class="small-imgs first-tow">
+                        <img class="detils-img  mini-img" src="./media/jordan2.jpg">
+                        <img class="detils-img  mini-img" src="./media/jordan3.jpg">
+                    </div>
+
+                    <div class="small-imgs second-tow">
+                        <img class="detils-img  mini-img" src="./media/jordan4.jpg">
+                        <img class="detils-img  mini-img" src="./media/jordan5.jpg">
+                    </div>
+
+                    <div class="small-imgs third-tow">
+                        <img class="detils-img  mini-img" src="./media/jordan6.jpg">
+                        <img class="detils-img  mini-img" src="./media/jordan7.jpg">
+                    </div> 
+                </div> 
+           
+                <ul class="sizing-table">
+                    <h3 class="chose-size">
+                     Select size
+                    </h3>
+                    <div class="sizing-div" >
+                        <button class="sizing-btn" type="button">EU 40</button> 
+                        <button class="sizing-btn" type="button">EU 41</button> 
+                        <button class="sizing-btn" type="button">EU 43</button> 
+                        <button class="sizing-btn" type="button">EU 44</button> 
+                        <button class="sizing-btn" type="button">EU 45</button> 
+                        <button class="sizing-btn" type="button">EU 46</button> 
+                    </div>
+                </ul> 
+
+                <div> 
+                    <a class="addtofavorite addToFavorite-hid">Add to favorites</a>
+                    <a class="addtobasket addToBasket-hid">Add to basket</a>
+                </div>
+            </div> 
+        </li>
+                        <!-- ....end..... -->
+
+        <li class="list">
+            <div class="product">
+                <div>
+                    <img class="front-img" id="front-img2" src="./media/airforce1.jpg" title="Air Jordan 1 Mid"/>
+                </div>
+
+                <div class="product-name" >
+                    <a  href="/#/product/1">
+                        <p>Air force</p>
+                    </a>    
+                </div>
+
+                <div id="cover-img"  class="product-brand">
+                    <p id="probrand" >NIKE</p>
+                </div>
+            
+                <div class="product-price" price="119.99">
+                    119.99 €
+                </div>
+
+                <div>
+                    <a class="addtofavorite" id="addtofavorites1" >Add to favorite</a>
+                    <a class="addtobasket"  id="addtofavorites12" >Add to basket</a>
+                </div>
+            </div>
+     
+     
+                <!-- hidden div -->
+
+            <div class="hidden-pro-img hid hiddenIMg" id="hidden-div2">
+                <span class="close">
+                    &times;
+                </span>
+
+                <img src="./media/airforce1-hide.jpg" id="mainImg2" class="hidden-pro-img-content" >
+
+                <div class="product-detl"><p style="color: firebrick;">119,99 €</p>
+                    <p> Inspired by the original AJ1, the Air Jordan 1 Mid offers fans a chance to follow in MJ's footsteps.
+                        Fresh colour trims the clean, classic materials, imbuing modernity into a classic design.
+                    </p>
+                </div>
+        
+                <div class="title">
+                    Air Jordan 1 Mid
+                </div>
+
+                <div  class="extra-product-img">
+                    <div  class="small-imgs first-tow">
+                        <img class="detils-img  mini-img" src="./media/airforce2.jpg">
+                        <img class="detils-img  mini-img" src="./media/airforce8.jpg">
+                    </div>
+
+                    <div class="small-imgs second-tow">
+                        <img class="detils-img  mini-img" src="./media/airforce4.jpg">
+                        <img class="detils-img  mini-img" src="./media/airforce5.jpg">
+                    </div>
+
+                    <div class="small-imgs third-tow">
+                        <img class="detils-img  mini-img" src="./media/airforce6.jpg">
+                        <img class="detils-img  mini-img" src="./media/airforce7.jpg">
+                    </div> 
+                </div> 
+           
+                <ul class="sizing-table">
+                    <h3 class="chose-size">
+                        Select size
+                    </h3>
+
+                    <div class="sizing-div" >
+                        <button class="sizing-btn" type="button">EU 40</button> 
+                        <button class="sizing-btn" type="button">EU 41</button> 
+                        <button class="sizing-btn" type="button">EU 43</button> 
+                        <button class="sizing-btn" type="button">EU 44</button> 
+                        <button class="sizing-btn" type="button">EU 45</button> 
+                        <button class="sizing-btn" type="button">EU 46</button> 
+                    </div>
+                </ul> 
+                <div> 
+                    <a class="addtofavorite addToFavorite-hid">Add to favorites</a>
+                    <a class="addtobasket addToBasket-hid">Add to basket</a>
+                </div>
+            </div> 
+        </li>
+
+             <!-- ....end..... -->
+
+        <li class="list">
+
+            <div class="product">
+                <div>
+                    <img class="front-img" id="front-img3" src="./media/Infinity.jpg" title="Kyrie Infinity"/>
+                </div>
+
+                <div class="product-name" >
+                    <a href="/#/product/1">
+                        <p>Kyrie Infinity</p>
+                    </a>
+                </div>
+
+                <div id="cover-img"  class="product-brand">
+                    <p id="probrand" >NIKE</p>
+                </div>
+            
+                <div class="product-price" price="119.99">
+                    129.99 €
+                </div>
+
+                <div>
+                    <a class="addtofavorite" id="addtofavorites1" >Add to favorite</a>
+                    <a class="addtobasket"  id="addtofavorites12" >Add to basket</a>
+                </div>
+
+            </div>
+     
+                    <!-- hidden div -->
+
+            <div class="hidden-pro-img hid hiddenIMg" id="hidden-div3">
+                <span class="close">
+                    &times;
+                </span>
+
+                <img src="./media/Infinity.jpg" id="mainImg3" class="hidden-pro-img-content" >
+
+                <div class="product-detl"><p style="color: firebrick;">129.99 €</p>
+                    <p>The faster Kyrie slows, the faster her acceleration or change of direction will be.
+                        His ability to control his movements leaves defenders in doubt and keeps him in control.
+                        The Kyrie Infinity offers a custom fit, more responsiveness in the forefoot and more grip on the sides,
+                        allowing players to speed up and slow down as they please and enjoy the distance they create. 
+                    </p>
+                </div>
+        
+                <div class="title">
+                    Kyrie Infinity
+                </div>
+
+                <div  class="extra-product-img">
+                    <div  class="small-imgs first-tow">
+                        <img class="detils-img  mini-img" src="./media/Infinity1.jpg">
+                        <img class="detils-img  mini-img" src="./media/Infinity2.jpg">
+                    </div>
+
+                    <div class="small-imgs second-tow">
+                        <img class="detils-img  mini-img" src="./media/Infinity3.jpg">
+                        <img class="detils-img  mini-img" src="./media/Infinity4.jpg">
+                    </div>
+
+                    <div class="small-imgs third-tow">
+                        <img class="detils-img  mini-img" src="./media/Infinity5.jpg">
+                        <img class="detils-img  mini-img" src="./media/Infinity6.jpg">
+                    </div> 
+                </div>
+            
+           
+                <ul class="sizing-table">
+                    <h3 class="chose-size">
+                        Select size
+                    </h3>
+
+                    <div class="sizing-div" >
+                        <button class="sizing-btn" type="button">EU 40</button> 
+                        <button class="sizing-btn" type="button">EU 41</button> 
+                        <button class="sizing-btn" type="button">EU 43</button> 
+                        <button class="sizing-btn" type="button">EU 44</button> 
+                        <button class="sizing-btn" type="button">EU 45</button> 
+                        <button class="sizing-btn" type="button">EU 46</button> 
+                    </div>
+                
+                </ul> 
+
+                <div> 
+                    <a class="addtofavorite addToFavorite-hid">Add to favorites</a>
+                    <a class="addtobasket addToBasket-hid">Add to basket</a>
+                </div>
+            </div>
+        </li>
+
+            <!-- ....end..... -->
+
+        <li class="list">
+
+            <div class="product">
+                <div>
+                     <img class="front-img" id="front-img4" src="./media/airmax1.jpg" title="Nike Air Max Plus 3 Leather"/>
+                </div>
+    
+                <div class="product-name" >
+                    <a  href="/#/product/1">
+                         <p>Air Max Plus 3 Leather</p>
+                    </a>   
+                </div>
+    
+                <div id="cover-img"  class="product-brand">
+                     <p id="probrand" >NIKE</p>
+                </div>
+                
+                <div class="product-price" price="119.99">
+                    179.90 €
+                </div>
+    
+                <div>
+                    <a class="addtofavorite" id="addtofavorites1" >Add to favorite</a>
+                    <a class="addtobasket"  id="addtofavorites12" >Add to basket</a>
+                </div>
+    
+            </div>
+         
+                <!-- hidden div -->
+    
+            <div class="hidden-pro-img hid hiddenIMg" id="hidden-div4" title="Nike Air Max Plus 3 Leather">
+                <span class="close">
+                    &times;
+                </span>
+    
+                <img src="./media/airmax1-hide.jpg" id="mainImg4" class="hidden-pro-img-content" >
+    
+                <div class="product-detl"><p style="color: firebrick;"> 179.90 €</p>
+                    <p> Equipped with the same Tuned Air technology as its predecessors,
+                        the Nike Air Max Plus 3 updates the classic style with TPU fused to a satin leather upper.
+                        Paying homage to the iconic model, it displays bright and contrasting colors for an unparalleled look.
+                    </p>
+                </div>
+            
+                <div class="title">
+                    Air Max Plus 3 Leather
+                </div>
+    
+                <div  class="extra-product-img">
+                    <div  class="small-imgs first-tow">
+                        <img class="detils-img  mini-img" src="./media/airmax2.jpg">
+                        <img class="detils-img  mini-img" src="./media/airmax3.jpg">
+                    </div>
+
+                    <div class="small-imgs second-tow">
+                        <img class="detils-img  mini-img" src="./media/airmax4.jpg">
+                        <img class="detils-img  mini-img" src="./media/airmax5.jpg">
+                    </div>
+
+                    <div class="small-imgs third-tow">
+                        <img class="detils-img  mini-img" src="./media/airmax6.jpg">
+                        <img class="detils-img  mini-img" src="./media/airmax7.jpg">
+                    </div> 
+                </div> 
+               
+                <ul class="sizing-table">
+                    <h3 class="chose-size">
+                        Select size
+                    </h3>
+
+                    <div class="sizing-div" >
+                        <button class="sizing-btn" type="button">EU 40</button> 
+                        <button class="sizing-btn" type="button">EU 41</button> 
+                        <button class="sizing-btn" type="button">EU 43</button> 
+                        <button class="sizing-btn" type="button">EU 44</button> 
+                        <button class="sizing-btn" type="button">EU 45</button> 
+                        <button class="sizing-btn" type="button">EU 46</button> 
+                    </div>
+                </ul> 
+                <div> 
+                    <a class="addtofavorite addToFavorite-hid">Add to favorites</a>
+                    <a class="addtobasket addToBasket-hid">Add to basket</a>
+                </div>
+            </div> 
+        </li>
+            <!-- ....end..... -->
+
+        <li class="list">
+
+            <div class="product">
+                <div >
+                     <img class="front-img" id="front-img5" src="./media/max1.jpg" title="Nike Air Max 97"/>
+                </div>
+    
+                <div class="product-name" >
+                    <a href="/#/product/1">
+                         <p>
+                            Air Max 97
+                        </p>
+                    </a>
+                    
+                </div>
+    
+                <div id="cover-img"  class="product-brand">
+                     <p id="probrand" >NIKE</p>
+                </div>
+                
+                <div class="product-price" price="119.99">
+                    179.99 €
+                </div>
+    
+                <div>
+                    <a class="addtofavorite" id="addtofavorites1" >Add to favorite</a>
+                    <a class="addtobasket"  id="addtofavorites12" >Add to basket</a>
+                </div>
+            </div>
+        
+                    <!-- hidden div -->
+    
+            <div class="hidden-pro-img hid hiddenIMg" id="hidden-div5">
+                <span class="close">
+                    &times;
+                </span>
+    
+                <img src="./media/max1-hide.jpg" id="mainImg5" class="hidden-pro-img-content" >
+    
+                <div class="product-detl"><p style="color: firebrick;">179.99 €</p>
+                    <p> Revisiting the wavy style of the original model inspired by Japanese bullet trains,
+                        the Nike Air Max 97 displays a dazzling style that puts the view.
+                        It takes the revolutionary full-length Nike Air unit that rocked the running world and
+                        eatures on-trend colors and stylish details to keep you moving in comfort.
+                    </p>
+                </div>
+            
+                <div class="title">
+                    Air Max 97
+                </div>
+    
+                <div  class="extra-product-img">
+                    <div  class="small-imgs first-tow">
+                        <img class="detils-img  mini-img" src="./media/max2.jpg">
+                        <img class="detils-img  mini-img" src="./media/max3.jpg">
+                    </div>
+
+                    <div class="small-imgs second-tow">
+                        <img class="detils-img  mini-img" src="./media/max4.jpg">
+                        <img class="detils-img  mini-img" src="./media/max5.jpg">
+                    </div>
+
+                    <div class="small-imgs third-tow">
+                        <img class="detils-img  mini-img" src="./media/max6.jpg">
+                        <img class="detils-img  mini-img" src="./media/max7.jpg">
+                    </div> 
+                </div> 
+               
+                <ul class="sizing-table">
+                    <h3 class="chose-size">
+                        Select size
+                    </h3>
+                    <div class="sizing-div" >
+                        <button class="sizing-btn" type="button">EU 40</button> 
+                        <button class="sizing-btn" type="button">EU 41</button> 
+                        <button class="sizing-btn" type="button">EU 43</button> 
+                        <button class="sizing-btn" type="button">EU 44</button> 
+                        <button class="sizing-btn" type="button">EU 45</button> 
+                        <button class="sizing-btn" type="button">EU 46</button> 
+                    </div>
+                </ul> 
+
+                <div> 
+                    <a class="addtofavorite addToFavorite-hid">Add to favorites</a>
+                    <a class="addtobasket addToBasket-hid">Add to basket</a>
+                </div>
+            </div> 
+        </li>
+                <!-- ....end..... -->
+    </ul> 
+</div>
+ 
+  <br>
+    <br>
+    <hr size="4" width="98%" color="gray">
+
+        <!-- basket hidden list -->
+
+    <div class="  favorite-hidden" id="basket-list" style= "display: none; margin-top: 0rem; ">
+   
+        <h1 id="empty-h1" style="text-align: center"> CHECKOUT</h1>
+    
+        <br>
+
+        <section class="container content-section" id="container">
+            <h2 class="section-header">CART</h2>
+            <div class="basket-row" id="basket-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="basket-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="basket-itms">
+            
+            </div>
+            <div class="cart-total" id="totalfinal">
+                <strong class="cart-total-title">Total</strong>
+                <span class="total-price" >€0</span>
+            </div>
+
+            <button class="btn btn-primary btn-purchase" id="purchase" type="button">PURCHASE</button>
+        </section>
+    </div>
+
+    <br>
+    <hr size="4" width="98%" color="gray">
+    <br>
+     <!-- favorite hidden list -->
+
+     <div class="  favorite-hidden" id="favorite-list" style= "display: none; margin-top: 0rem; ">
+   
+        <h1 id="empty-h1" style="text-align: center"> Your favorite list</h1>
+    
+        <br>
+
+        <section class="container content-section" id="container">
+            
+            <div class="basket-row" id="basket-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="basket-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="basket-itms">
+            
+            </div>
+        </section>
+    </div>
+    <br>
+    <br>
+    <script src="./script/script.js" ></script>
+
+</body>
+  
+
+
+    <footer>
+        <h6>My right is reserved, so don't steal anything</h6>
+        <h6>@2022 CREATED BY</h6>        
+        <ul class="wrapper">
+            <li class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </li>
+            <li class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <span><i class="fab fa-twitter"></i></span>
+            </li>
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><i class="fab fa-instagram"></i></span>
+            </li>
+            <li class="icon github">
+              <span class="tooltip">Github</span>
+              <span><i class="fab fa-github"></i></span>
+            </li>
+            <li class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <span><i class="fab fa-youtube"></i></span>
+            </li>
+          </ul>
+
+    </footer>
+</html>

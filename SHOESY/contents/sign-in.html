@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="../media/style .css"/>
+    <title>HOME</title> 
+</head>
+
+<body>  
+    <div class="grid-container">
+        <header>
+            <div class="content-div">
+                <a id="logo" href="index.html">SHOESY</a>
+            </div>
+
+            <div class="content-div">
+                <a class="center-header" href="../index.html">HOME</a>
+            </div>
+
+            <div  class="content-div">
+                <button  class="favoritebtn head-btn center-header" id="fav-head-btn">FAVORITE LIST (
+                    <span> 0</span> )
+                </button>
+            </div>
+        
+            <div  class="content-div">
+                <button  class="center-header basketBtn  head-btn" id="baskt-head-btn">BASKET (
+                    <span> 0 </span> )
+                <img  id="basktimg" src="../media/baskt.jpg" alt="Go to basket"/>
+                </button>
+
+            </div>
+
+            <div  class="content-div">
+                <a class="center-header" href="../contents/calculator.html">CALCULATOR</a>
+            </div>
+        
+            <div  class="content-div">
+                <a  id="signin-head" href="../contents/sign-in.html">Sign-In</a>
+                <a class="head-btn" id="signup-head" onclick="changebtn()" >Sign Up</a>
+            </div>
+        </header>
+    </div>   
+    
+        <hr size="4" width="98%" color="orange">  
+
+    <br>
+            <!-- START -->
+            
+    <section class="sectionLeft">
+        <div id="divLeft1" class="frame afterhide">
+            <h1> Welcom to SHOESY</h1>
+            <h3>Already have an account ?</h3>
+            <button type="button" class="reload-btn" onclick="location.reload()">Sign-In</button>
+        </div>
+        <div id="divLeft2" class="forma change-fade">
+            <h1 >Log-in</h1>
+            <form action="" method="post" >
+                <input type="text" name="user-name" class="input-box" placeholder="User Name" id="user">
+                <input type="password" name="user-pass" class="input-box" placeholder="Password" id="pass">
+                <input type="button" id="log-in" onclick="signIn()" name="login-btn" class="btn"  value="Log in">
+
+            </form>
+        </div>
+    </section>
+
+    <section class="sectionRight">
+        <div id="divRight1" class="frame change-fade">
+            <h1>Don't have an account ?</h1>
+            <h3>Sign up and get up to 20% discont</h3>
+            
+            <button type="button" class="reload-btn" onclick="changebtn()">Sign-up</button>
+
+            
+        </div>
+
+        
+        <div id="diveRight2" class="forma hide-forma">
+            <h2>Create your Account</h2>
+            
+            <form action="" method="post">
+                <input type="text" name="user-name" id="usern" class="input-box" placeholder="User Name">
+                <input type="email" name="user-email"id="newemail" class="input-box" placeholder="Email">
+                <input type="password" name="user-pass" id="newpass" class="input-box" placeholder="Password">
+                <input type="password" name="user-cpass" id="cofpass" class="input-box" placeholder="Confirm Password">
+               
+                <div id="checkboxdiv">
+
+                    <input type="checkbox" id="checkboxinput">
+                    <p id="checkbox-p">By checking this box, you are agreeing to our terms of service. </p>
+
+                </div>
+              <br>
+                <input id="csign-up" type="button"   name="signup-btn" class="btn" onclick="signUp()" value="Sign up">
+            </div>
+            
+            </form>
+           
+        </div>
+    </section>
+  <script src="../script/script.js" ></script>
+  
+
+</body>
+
+
+<hr size="4" width="98%" color="gray">  
+<footer>
+    <h6>My right is reserved, so don't steal anything</h6>
+    <h6>@2022 CREATED BY</h6>        
+    <h4>AL-ASADI AHMED</h4>
+    <h6>AL-AH960@school.lu</h6>
+
+</footer>
+</html>
